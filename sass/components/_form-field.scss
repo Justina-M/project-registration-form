@@ -1,0 +1,24 @@
+.form-field {
+    // border: 1px solid red;
+    width: 26rem;
+    font-size: 1.6rem;
+    color: $color-text-main;
+
+    &__label {
+        display: block;
+        padding: 3rem 0 1rem 0;
+    }
+
+    &__input-field {
+        width: 26rem;
+        height: 4.7rem;
+        border: none;
+        border-radius: 1rem;
+        padding: 1.4rem;
+        background-color: $color-grey-medium;
+    }
+
+    &__radio-label {
+        padding: 0 4.5rem 0 1rem;
+    }
+}

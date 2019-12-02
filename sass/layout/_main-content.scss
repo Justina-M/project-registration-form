@@ -1,0 +1,22 @@
+.main-content {
+    background-color: $color-grey-light;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+// ----------  SECTION MAIN INFO  ----------
+
+.main-info {
+
+    &__flex-container {
+        // border: 1px solid red;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 6rem 5rem;
+    }
+
+    &__flex-item {
+        flex: 25%;
+        // border: 1px solid green;
+    }
+}
