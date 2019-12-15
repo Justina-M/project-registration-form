@@ -2,14 +2,15 @@
     display: flex;
     flex-flow: column nowrap;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 720px) {
         flex-flow: row nowrap;
     }
 
     &__flex-item {
         flex: 100%;
+        // border: 1px solid blue;
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 720px) {
             flex: 50%;
         }
     }
@@ -25,17 +26,18 @@
 
         &--text {
             font-size: 1.4rem;
+            font-weight: 700;
             color: #fff;
-            padding: 1rem 1.5rem;
+            padding: 1.5rem 2.5rem;
 
-            @media only screen and (min-width: 768px) {
-                font-size: 1.5rem;
+            @media only screen and (min-width: 720px) {
+                font-size: 1.6rem;
+                padding: 1.8rem 3rem;
             }
         }
 
         &--exit {
             font-size: 1.9rem;
-            padding: 1rem;
         }
     }
 }
