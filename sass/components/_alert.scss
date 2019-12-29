@@ -1,6 +1,8 @@
 .alert {
     display: flex;
     flex-flow: column nowrap;
+    transform: translateY(-100%);
+    transition: 0.2s ease-out;
 
     @media only screen and (min-width: 768px) {
         flex-flow: row nowrap;
@@ -16,7 +18,7 @@
 
     &__pop-up {
         width: 90%;
-        margin: 0 auto;
+        margin: -1rem auto 0 auto;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -26,7 +28,7 @@
         &--text {
             font-size: 1.4rem;
             color: #fff;
-            padding: 1rem 1.5rem;
+            padding: 2rem 1.5rem 1rem 1.5rem;
 
             @media only screen and (min-width: 768px) {
                 font-size: 1.5rem;
@@ -35,7 +37,36 @@
 
         &--exit {
             font-size: 1.9rem;
-            padding: 1rem;
+            padding: 2rem 1rem 1rem 1rem;
+            cursor: pointer;
         }
     }
 }
+
+.alert-wrapper {
+    overflow: hidden;
+    // padding-bottom: 0.7rem;
+    // border: 1px solid blue;
+}
+
+.pop-up--show {
+    // animation: moveIn 0.2s ease-out forwards;
+    transform: translateY(0%);
+    
+}
+
+// @keyframes moveIn {
+//     5% {transform: translateY(-50%)}
+//     85% {transform: translateY(10%)}
+//     100% {transform: translateY(0%)}
+// }
+
+// .pop-up--hide {
+//     animation: moveOut 2s ease-out;
+// }
+
+// @keyframes moveOut {
+//     15% {transform: translateY(10%)}
+//     95% {transform: translateY(-50%)}
+//     100% {transform: translateY(-100%)}
+// }

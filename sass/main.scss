@@ -2,9 +2,15 @@
 @import "base/mixins";
 @import "base/variables";
 
+@import "components/accordion";
 @import "components/alert";
 @import "components/form-field";
-@import "components/section-header";
+@import "components/planned-program-content";
+
+@import "fontawesome/fontawesome";
+@import "fontawesome/brands";
+@import "fontawesome/solid";
+@import "fontawesome/regular";
 
 @import "layout/header";
 @import "layout/main-content";

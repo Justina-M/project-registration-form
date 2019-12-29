@@ -18,12 +18,12 @@
         }
     }
     &__logo-box {
-        background: url(../../images/logo.svg) #fff no-repeat 50% 35%;
-        background-size: 15.5rem;
+        background-color: #fff;
         width: 19rem;
         height: 19rem;
         border-radius: 50%;
         margin: 3rem auto;
+        position: relative;
 
         @media only screen and (min-width: 768px) {
             margin-bottom: -3rem;
@@ -31,9 +31,22 @@
         }
 
         @media only screen and (min-width: 992px) {
-            background-size: 19rem;
             width: 23rem;
             height: 23rem;
+        }
+
+        &--logo {
+            max-width: 14.5rem;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+            @media only screen and (min-width: 992px) {
+                max-width: 17.5rem;
+            }
         }
     }
     &__text-box {

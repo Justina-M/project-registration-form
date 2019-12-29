@@ -1,8 +1,9 @@
-.section-header {
+.accordion-header {
     background-color: $color-primary;
     padding: 1.5rem 0 1.5rem 4rem;
-    margin-bottom: 5rem;
+    border-bottom: 1px solid $color-grey-light;
     position: relative;
+    cursor: pointer;
 
     &::before {
         // font-family: "Material Icons";
@@ -18,12 +19,28 @@
         // pointer-events: none;
     }
 
-    &::after {
+    &:hover, &--active {
+        background-color: $color-secondary;
+        transition: 0.2s;
+    }
+
+    &--active::before {
+        transform: rotate(0deg);
+    }
+
+    &--active::after {
         content: '';
         border-left: 2rem solid transparent;
         border-right: 2rem solid transparent;
-        border-top: 2rem solid $color-primary;
+        border-top: 2rem solid $color-secondary;
         position: absolute;
         bottom: -2rem;
-    }
+    }    
+}
+
+.accordion-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    // border: 1px solid green;
 }
