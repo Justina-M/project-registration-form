@@ -1,25 +1,15 @@
 .thank-you-page {
-    background-image: linear-gradient(to right top, $color-secondary, $color-primary);
-    color: #fff;
-    text-align: center;
+    @include background;
 
     &__logo-box {
-        background: url(../../images/logo.svg) #fff no-repeat 50% 35%;
-        background-size: 15.5rem;
-        width: 19rem;
-        height: 19rem;
-        border-radius: 50%;
-        margin: 5rem auto 5rem auto;
-
-        @media only screen and (min-width: 576px) {
-            margin: 10rem auto 5rem auto;
-        }
+        @include logo;
     }
 
     &__heading {
         font-size: 3.5rem;
         text-transform: uppercase;
         margin-bottom: 2.5rem;
+        position: relative;
 
         @media only screen and (min-width: 576px) {
             font-size: 4.5rem;
@@ -28,7 +18,6 @@
         & i {
             font-size: 5rem;
             margin-right: 2rem;
-            // border: 1px solid yellow;
         }
     }
 

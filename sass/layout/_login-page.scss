@@ -1,0 +1,53 @@
+.login-page {
+    @include background;
+
+    &__logo-box {
+        @include logo;
+    }
+
+    &__form-box {
+        background-color: #fff;
+        width: 35rem;
+        height: 35rem;
+        border-radius: 1rem;
+        margin: 0 auto;
+    }
+
+    &__form-wrapper {
+        display: inline-block;
+        margin: 7rem auto;
+        // border: 1px solid red;
+    }
+
+    &__input-field {
+        margin-bottom: 2rem;
+        position: relative;
+
+        & input {
+            padding-left: 6rem;
+        }
+
+        &--on-focus:focus + i {
+            color: $color-primary;
+            border-right: 1px solid $color-primary; 
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 1rem;
+        left: 1.5rem;
+        padding-right: 1rem;
+        font-size: 2.5rem;
+        border-right: 1px solid $color-text-main;
+
+        // &:focus {
+        //     color: $color-primary;
+        //     border-right: 1px solid $color-primary;
+        // }
+    }
+
+    &__submit-field {
+        margin-top: 5rem;
+    }
+}

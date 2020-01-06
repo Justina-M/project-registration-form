@@ -4,15 +4,14 @@
 
 @import "components/accordion";
 @import "components/alert";
+@import "components/checkmark";
 @import "components/form-field";
+@import "components/modal";
 @import "components/planned-program-content";
-
-@import "fontawesome/fontawesome";
-@import "fontawesome/brands";
-@import "fontawesome/solid";
-@import "fontawesome/regular";
 
 @import "layout/header";
 @import "layout/main-content";
 @import "layout/footer";
 @import "layout/thank-you-page";
+@import "layout/login-page";
+@import "layout/admin-page";

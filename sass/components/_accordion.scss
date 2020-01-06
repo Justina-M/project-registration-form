@@ -1,13 +1,11 @@
 .accordion-header {
-    background-color: $color-primary;
+    background-color: $color-secondary;
     padding: 1.5rem 0 1.5rem 4rem;
     border-bottom: 1px solid $color-grey-light;
     position: relative;
     cursor: pointer;
 
     &::before {
-        // font-family: "Material Icons";
-        // content: "arrow_drop_down";
         content: '';
         border-left: 0.8rem solid transparent;
         border-right: 0.8rem solid transparent;
@@ -15,32 +13,58 @@
         position: absolute;
         bottom: 3rem;
         right: 2rem;
-        transform: rotate(90deg);
-        // pointer-events: none;
-    }
-
-    &:hover, &--active {
-        background-color: $color-secondary;
-        transition: 0.2s;
-    }
-
-    &--active::before {
         transform: rotate(0deg);
     }
 
-    &--active::after {
+    &::after {
         content: '';
         border-left: 2rem solid transparent;
         border-right: 2rem solid transparent;
         border-top: 2rem solid $color-secondary;
         position: absolute;
         bottom: -2rem;
-    }    
+    }
+
+    &:hover {
+        background-color: $color-secondary;
+        transition: 0.2s;
+    }
+
+    &--inactive {
+        background-color: $color-primary;
+    }
+
+    &--inactive::before {
+        transform: rotate(90deg);
+    }
+
+    &--inactive::after {
+        border: none;
+    }
+
+    // &--active::before {
+    //     transform: rotate(0deg);
+    // }
+
+    // &--active::after {
+    //     content: '';
+    //     border-left: 2rem solid transparent;
+    //     border-right: 2rem solid transparent;
+    //     border-top: 2rem solid $color-secondary;
+    //     position: absolute;
+    //     bottom: -2rem;
+    // }    
 }
 
 .accordion-content {
     overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
+    max-height: 100%;
+    // display: block;
+    // transition: max-height 0.2s ease-out;
     // border: 1px solid green;
+}
+
+.accordion-content--inactive {
+    max-height: 0;
+    // transition: 0.2s ease-out;
 }

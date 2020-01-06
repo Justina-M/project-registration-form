@@ -49,10 +49,11 @@
             }
         }
     }
+
     &__text-box {
         width: 100%;
         text-align: center;
-        padding: 0 1rem;;
+        padding: 0 1rem;
 
         @media only screen and (min-width: 768px) {
             text-align: left;

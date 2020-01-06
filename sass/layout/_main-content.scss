@@ -74,12 +74,25 @@
             flex: 50%;
         }
     }
+
+    & + .competitor {
+        display: none;
+    }
+
+    &__paragraph {
+        color: $color-text-main;
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 2.3rem;
+        padding: 0 4rem;
+    }
 }
+
 
 // *******************    SECTION - SUBMIT    *******************
 
 .submit {
-    padding: 4rem 4rem 6rem 4rem;
+    padding: 8rem 4rem 8rem 4rem;
     text-align: center;
     // border-top: 1px solid $color-primary;
     // border: 1px solid blue;
