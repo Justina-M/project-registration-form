@@ -527,12 +527,14 @@ h2 {
   .thank-you-page__text {
     max-width: 30rem;
     margin: 0 auto 5rem auto;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 300;
     line-height: 2rem; }
-    @media only screen and (min-width: 576px) {
-      .thank-you-page__text {
-        max-width: 38rem; } }
+  .thank-you-page__count-message {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem; }
 
 .login-page {
   background-image: linear-gradient(to right top, #00BCD4, #0288D1);

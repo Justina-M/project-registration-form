@@ -1,3 +1,5 @@
+<?php
+echo '
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,10 +21,26 @@
             <div class="checkmark"></div>
             <span>Thank you !</span>
         </div>
-        <p class="thank-you-page__text">
-            Your registration has been received.
+        <p class="thank-you-page__text thank-you-page__count-message">';
+
+        $countCompetitors = $_GET['competitors'];
+        $countJudges = $_GET['judges'];
+
+        if ($countCompetitors == 1 && $countJudges == 1) {
+            echo "We have received your registration of " . $countCompetitors . " competitor and " . $countJudges . " judge.</p>";
+        } elseif ($countCompetitors == 1 && $countJudges == 0) {
+            echo "We have received your registration of " . $countCompetitors . " competitor.</p>";
+        } elseif ($countCompetitors > 1 && $countJudges == 1) {
+            echo "We have received your registration of " . $countCompetitors . " competitors and " . $countJudges . " judge.</p>";
+        } else {
+            echo "We have received your registration of " . $countCompetitors . " competitors.</p>";
+        }
+
+    echo '<p class="thank-you-page__text">
             The list of participants and the time schedule will be available shortly after the registration deadline. All the information will be sent to your indicated email.
         </p>
     </div>
 </body>
-</html>
+</html>';
+
+?>

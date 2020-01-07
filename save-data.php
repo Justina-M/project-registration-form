@@ -122,20 +122,20 @@ try {
 
     // $shortProgramMusic = filter_var_array(basename($_FILES['short-program-music']['name']));
 
-    var_dump($judgeFirstName);
-    echo "<br>";
-    var_dump($judgeQualification);
-    echo "<br>";
-    var_dump($competitorFirstName);
-    echo "<br>";
-    var_dump($competitorLastName);
-    echo "<br>";
-    var_dump($birthDate);
-    echo "<br>";
-    var_dump($category);
-    echo "<br>";
-    var_dump($sp1);
-    echo "<br>";
+    // var_dump($judgeFirstName);
+    // echo "<br>";
+    // var_dump($judgeQualification);
+    // echo "<br>";
+    // var_dump($competitorFirstName);
+    // echo "<br>";
+    // var_dump($competitorLastName);
+    // echo "<br>";
+    // var_dump($birthDate);
+    // echo "<br>";
+    // var_dump($category);
+    // echo "<br>";
+    // var_dump($sp1);
+    // echo "<br>";
 
     if(is_array($competitorFirstName) && isset($competitorFirstName) 
     && is_array($competitorLastName) && isset($competitorLastName)
@@ -190,8 +190,15 @@ try {
         else {
         echo "not array<br>";
     }
-    header('location:thank-you.html');
-
+    $countCompetitors = count(array_filter($competitorFirstName, function($x) { return !empty($x); }));
+    if ($_POST['judge-first-name'] != '') {
+        $countJudges = 1;
+    } else {
+        $countJudges = 0;
+    }
+    
+    $url = "thank-you.php?competitors=" . $countCompetitors . "&judges=" . $countJudges;
+    header('location:' . $url);
 }
 // create an object containing the exception information
 catch(PDOException $ex) {
