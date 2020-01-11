@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <script src="scripts/jquery-3.4.1.min.js"></script>          paleidziant svetaine naudoti min sucompresinta versija -->
     <script src="scripts/jquery-3.4.1.js"></script>
-    <!-- <script src="scripts/form.js"></script> -->
+    <script src="scripts/form.js"></script>
     <script type="text/javascript" src="scripts/index.js"></script>
     <title>Registration Form</title>
 </head>
@@ -60,12 +60,13 @@
                                 <label for="club" class="form-field__label">Club<span class="form-field__required"> *</span></label>
                                 <input type="text" name="club" id="club" class="form-field__input-field" autocomplete="on" required>
                             </div>
+                            <div class="display-error"></div>
                         </div>
                         <div class="flex-item">
                             <div class="form-field">
                                 <label for="isu-member" class="form-field__label">ISU Member Federation<span class="form-field__required"> *</span></label>
                                 <div class="form-field__select">
-                                    <select name="isu-member" id="isu-member" class="form-field__input-field" required>
+                                    <select name="isu_member" id="isu_member" class="form-field__input-field" required>
                                         <option disabled selected></option>
                                         <option value="Andorra">Andorra</option>
                                         <option value="Argentina">Argentina</option>
@@ -87,18 +88,21 @@
                                     </select>
                                 </div>
                             </div>
+                            <div class="display-error"></div>
                         </div>
                         <div class="flex-item">
                             <div class="form-field">
                                 <label for="contact-person" class="form-field__label">Contact person<span class="form-field__required"> *</span></label>
-                                <input type="text" name="contact-person" id="contact-person" class="form-field__input-field" autocomplete="on" required>
+                                <input type="text" name="contact_person" id="contact_person" class="form-field__input-field" autocomplete="on" required>
                             </div>
+                            <div class="display-error"></div>
                         </div>
                         <div class="flex-item">
                             <div class="form-field">
                                 <label for="contact-email" class="form-field__label">Contact email<span class="form-field__required"> *</span></label>
-                                <input type="email" name="contact-email" id="contact-email" class="form-field__input-field" autocomplete="on" required>
+                                <input type="email" name="contact_email" id="contact_email" class="form-field__input-field" autocomplete="on" required>
                             </div>
+                            <div class="display-error"></div>
                         </div>
                         <div class="flex-item">
                             <div class="form-field">
@@ -113,7 +117,7 @@
                     </div>
                 </section>
     <!--  ********************    FORM #JUDGE    ********************  -->
-                <section id="judge" class="judge">
+                <!-- <section id="judge" class="judge">
                     <div class="accordion-header">
                         <h3>Judge</h3>
                     </div>
@@ -150,9 +154,9 @@
                             <div class="flex-item"></div>
                         </div>
                     </div>
-                </section>
+                </section> -->
     <!--  ********************    FORM #COMPETITOR 1    ********************  -->
-                <section id="competitor1" class="competitor">
+                <!-- <section id="competitor1" class="competitor">
                     <div class="accordion-header">
                         <h3>Competitor No.1</h3>
                     </div>
@@ -310,10 +314,10 @@
                         </div>
                     </div>
 
-                </section>
+                </section> -->
 
     <!--  ********************    FORM #COMPETITOR 2    ********************  -->
-                <section id="competitor2" class="competitor">
+                <!-- <section id="competitor2" class="competitor">
                     <div class="accordion-header">
                         <h3>Competitor No.2</h3>
                     </div>
@@ -471,9 +475,9 @@
                         </div>
                     </div>
 
-                </section>
+                </section> -->
                 <!--  ********************    FORM #COMPETITOR 3    ********************  -->
-                <section id="competitor3" class="competitor">
+                <!-- <section id="competitor3" class="competitor">
                     <div class="accordion-header">
                         <h3>Competitor No.3</h3>
                     </div>
@@ -631,10 +635,10 @@
                         </div>
                     </div>
 
-                </section>
+                </section> -->
 
                 <!--  ********************    FORM #COMPETITOR 4    ********************  -->
-                <section id="competitor4" class="competitor">
+                <!-- <section id="competitor4" class="competitor">
                     <div class="accordion-header">
                         <h3>Competitor No.4</h3>
                     </div>
@@ -792,10 +796,10 @@
                         </div>
                     </div>
 
-                </section>
+                </section> -->
 
                 <!--  ********************    FORM #COMPETITOR 5    ********************  -->
-                <section id="competitor5" class="competitor">
+                <!-- <section id="competitor5" class="competitor">
                     <div class="accordion-header">
                         <h3>Competitor No.5</h3>
                     </div>
@@ -939,7 +943,7 @@
                         </div>
                     </div>
 
-                </section>
+                </section> -->
 
             </div> 
     <!--  ********************    FORM SUBMIT    ********************  -->
@@ -962,7 +966,7 @@
             <i class="fab fa-youtube"></i>
         </a>
         <p class="footer__copyright">
-            Kaunas Ice &#169; 2019 &#124; All Rights Reserved
+            Kaunas Ice &#169; 2020 &#124; All Rights Reserved
         </p>
     </footer>
 <!--  ********************    MODAL WINDOW    ********************  -->
