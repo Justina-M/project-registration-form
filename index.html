@@ -56,11 +56,11 @@
                 <section id="club-info">
                     <div class="flex-container">
                         <div class="flex-item">
+                            <div class="alert alert-danger display-error" style="color: red; display: none"></div>
                             <div class="form-field">
                                 <label for="club" class="form-field__label">Club<span class="form-field__required"> *</span></label>
                                 <input type="text" name="club" id="club" class="form-field__input-field" autocomplete="on" required>
                             </div>
-                            <div class="display-error"></div>
                         </div>
                         <div class="flex-item">
                             <div class="form-field">
@@ -88,21 +88,18 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="display-error"></div>
                         </div>
                         <div class="flex-item">
                             <div class="form-field">
                                 <label for="contact-person" class="form-field__label">Contact person<span class="form-field__required"> *</span></label>
                                 <input type="text" name="contact_person" id="contact_person" class="form-field__input-field" autocomplete="on" required>
                             </div>
-                            <div class="display-error"></div>
                         </div>
                         <div class="flex-item">
                             <div class="form-field">
                                 <label for="contact-email" class="form-field__label">Contact email<span class="form-field__required"> *</span></label>
                                 <input type="email" name="contact_email" id="contact_email" class="form-field__input-field" autocomplete="on" required>
                             </div>
-                            <div class="display-error"></div>
                         </div>
                         <div class="flex-item">
                             <div class="form-field">
@@ -117,7 +114,7 @@
                     </div>
                 </section>
     <!--  ********************    FORM #JUDGE    ********************  -->
-                <!-- <section id="judge" class="judge">
+                <section id="judge" class="judge">
                     <div class="accordion-header">
                         <h3>Judge</h3>
                     </div>
@@ -129,20 +126,20 @@
                             <div class="flex-item">
                                 <div class="form-field">
                                     <label for="judge-first-name" class="form-field__label">First Name<span class="form-field__required"> *</span></label>
-                                    <input type="text" name="judge-first-name" id="judge-first-name" class="form-field__input-field" required>
+                                    <input type="text" name="judge_first_name" id="judge_first_name" class="form-field__input-field" required>
                                 </div>
                             </div>
                             <div class="flex-item">
                                 <div class="form-field">
                                     <label for="judge-last-name" class="form-field__label">Last Name<span class="form-field__required"> *</span></label>
-                                    <input type="text" name="judge-last-name" id="judge-last-name" class="form-field__input-field" required>
+                                    <input type="text" name="judge_last_name" id="judge_last_name" class="form-field__input-field" required>
                                 </div>
                             </div>
                             <div class="flex-item">
                                 <div class="form-field">
                                     <label for="judge-qualification" class="form-field__label">Qualification<span class="form-field__required"> *</span></label>
                                     <div class="form-field__select">
-                                        <select name="judge-qualification" id="judge-qualification" class="form-field__input-field" required>
+                                        <select name="judge_qualification" id="judge_qualification" class="form-field__input-field" required>
                                             <option disabled selected></option>
                                             <option value="National">National</option>
                                             <option value="International">International</option>
@@ -154,7 +151,7 @@
                             <div class="flex-item"></div>
                         </div>
                     </div>
-                </section> -->
+                </section>
     <!--  ********************    FORM #COMPETITOR 1    ********************  -->
                 <!-- <section id="competitor1" class="competitor">
                     <div class="accordion-header">

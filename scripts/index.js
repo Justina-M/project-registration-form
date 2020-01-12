@@ -15,9 +15,9 @@ window.onload = function() {
 
     // *******************    SHOW / HIDE JUDGE SECTION - TOGGLE REQUIRED    *******************
 
-    // var judge = document.getElementById("judge");
-    // var showJudge = document.getElementById("delegate-judge-yes");
-    // var hideJudge = document.getElementById("delegate-judge-no");   
+    var judge = document.getElementById("judge");
+    var showJudge = document.getElementById("delegate-judge-yes");
+    var hideJudge = document.getElementById("delegate-judge-no");   
 
     // var judgeInput = judge.getElementsByTagName("input");
     // var judgeSelect = judge.getElementsByTagName("select");
@@ -31,25 +31,25 @@ window.onload = function() {
     // //     }
     // // }
 
-    // showJudge.onclick = function() {
-    //     judge.style.display = "block";
-    //     // for (var i=0; i < judgeInput.length; i++) {
-    //     //     judgeInput[i].toggleAttribute("required", true);
-    //     // }
-    //     // for (var i=0; i < judgeSelect.length; i++) {
-    //     //     judgeSelect[i].toggleAttribute("required", true);
-    //     // }
-    // }
+    showJudge.onclick = function() {
+        judge.style.display = "block";
+        // for (var i=0; i < judgeInput.length; i++) {
+        //     judgeInput[i].toggleAttribute("required", true);
+        // }
+        // for (var i=0; i < judgeSelect.length; i++) {
+        //     judgeSelect[i].toggleAttribute("required", true);
+        // }
+    }
 
-    // hideJudge.onclick = function() {
-    //     judge.style.display = "none";
-    //     // for (var i=0; i < judgeInput.length; i++) {
-    //     //     judgeInput[i].toggleAttribute("required", false);
-    //     // }
-    //     // for (var i=0; i < judgeSelect.length; i++) {
-    //     //     judgeSelect[i].toggleAttribute("required", false);
-    //     // }
-    // }
+    hideJudge.onclick = function() {
+        judge.style.display = "none";
+        // for (var i=0; i < judgeInput.length; i++) {
+        //     judgeInput[i].toggleAttribute("required", false);
+        // }
+        // for (var i=0; i < judgeSelect.length; i++) {
+        //     judgeSelect[i].toggleAttribute("required", false);
+        // }
+    }
 
     // *******************    ADD / REMOVE COMPETITOR SECTION - TOGGLE REQUIRED    *******************
 
@@ -207,15 +207,15 @@ window.onload = function() {
 
     // *******************    ACCORDION    *******************
 
-    // var accordion = document.getElementsByClassName("accordion-header");
-    // var i;
+    var accordion = document.getElementsByClassName("accordion-header");
+    var i;
 
-    // for (i = 0; i < accordion.length; i++) {
-    //     accordion[i].addEventListener("click", function() {
-    //         this.classList.toggle("accordion-header--inactive");
-    //         this.nextElementSibling.classList.toggle("accordion-content--inactive");
-    //     });
-    // }
+    for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function() {
+            this.classList.toggle("accordion-header--inactive");
+            this.nextElementSibling.classList.toggle("accordion-content--inactive");
+        });
+    }
 
 
     // *******************    MODAL WINDOW    *******************

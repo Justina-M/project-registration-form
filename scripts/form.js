@@ -6,6 +6,9 @@ $(document).ready(function() {
         var isu_member = $("#isu_member").val();
         var contact_person = $("#contact_person").val();
         var contact_email = $("#contact_email").val();
+        var judge_first_name = $("#judge_first_name").val();
+        var judge_last_name = $("#judge_last_name").val();
+        var judge_qualification = $("#judge_qualification").val();
 
         $.ajax({
             type: "POST",
@@ -15,13 +18,16 @@ $(document).ready(function() {
                 club:club,
                 isu_member:isu_member,
                 contact_person:contact_person,
-                contact_email:contact_email
+                contact_email:contact_email,
+                judge_first_name:judge_first_name,
+                judge_last_name:judge_last_name,
+                judge_qualification:judge_qualification
             },
             success: function(data) {
                 console.log(data);
 
                 if (data.code == "200") {
-                    alert('Thank you, your registration was successfully submited.');
+                    alert('Thank you, your registration was successfully submited.'); // TODO redirect to thank-you page
                     console.log('Registration was successfull. Form data: ' + data.msg);
                     $("#registration-form")[0].reset();  // Reset all form data
                     $(".display-error").css("display", "none");  // Hide all errors
