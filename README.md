@@ -12,4 +12,4 @@ Idea, design, architecture and codebase created by Justina-M.
 
 Below is the planned design of the project
 
-[design](./registration-form-style-desktop.pdf)
+![design](./registration-form-style-desktop.pdf)
