@@ -13,3 +13,13 @@ Idea, design, architecture and codebase created by Justina-M.
 Below is the planned design of the project
 
 ![form design](./design/registration-form-style-desktop.jpg)
+
+![thank you design](./design/thank-you-page-style-desktop.jpg)
+
+![login design](./design/login-page-style-desktop.jpg)
+
+![admin design 1](./design/administrator-page-style-desktop-1.jpg)
+
+![admin design 2](./design/administrator-page-style-desktop-2.jpg)
+
+![admin design 3](./design/administrator-page-style-desktop-3.jpg)
